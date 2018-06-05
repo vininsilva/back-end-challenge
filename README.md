@@ -39,7 +39,7 @@ grant all on challenge_db.* to 'admin'@'localhost';
 
 2. Crie uma nova Query Tab e use script abaixo:
 
-´´´
+```
 DROP TABLE IF EXISTS ACCOUNT;
 
 CREATE TABLE challenge_db.ACCOUNT (
@@ -53,7 +53,7 @@ INSERT INTO challenge_db.ACCOUNT (ID, NAME, BALANCE, DATE)
 VALUES 
 (198882, 'Jeff Bezos', 2500, STR_TO_DATE("05/07/1995", "%d/%m/%Y")),
 (188872, 'Jack Ma', 5000.25, STR_TO_DATE("04/04/1999", "%d/%m/%Y"));
-´´´
+```
 
 3. Execute o script (Utilize o raio na interface do Query Tab caso não consiga executar).
 
