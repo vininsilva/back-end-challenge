@@ -17,7 +17,7 @@ Seguir este guia de instalação: https://www.devmedia.com.br/instalando-e-confi
 
 ### Baixar e rodar o projeto do GitHub
 
-1. No terminal, utiliza o comando: 
+1. No terminal, utilizar o comando: 
 
 ```
 git clone https://github.com/vininsilva/back-end-challenge.git
