@@ -16,7 +16,7 @@ public class Account {
 	
 	private String name;
 	
-	private Integer balance;
+	private float balance;
 	
 	private Date date;
 
@@ -36,11 +36,11 @@ public class Account {
 		this.name = name;
 	}
 
-	public Integer getBalance() {
+	public float getBalance() {
 		return balance;
 	}
 
-	public void setBalance(Integer balance) {
+	public void setBalance(float balance) {
 		this.balance = balance;
 	}
 
