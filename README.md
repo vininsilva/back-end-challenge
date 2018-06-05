@@ -17,7 +17,7 @@ Seguir este guia de instalação: https://www.devmedia.com.br/instalando-e-confi
 
 #### Criando Schema necessário para o projeto
 
-1. Abra o MySQL Shell e insira a senha definida por você quando instalou o MySQL no passo anterior.
+1. Abra o MySQL Command Line Client e insira a senha definida por você quando instalou o MySQL no passo anterior.
 
 2. Um por vez, utilize os comandos:
 
@@ -32,6 +32,32 @@ create user 'admin'@'localhost' identified by 'admin';
 ```
 grant all on challenge_db.* to 'admin'@'localhost';
 ```
+
+#### Criando a tabela Account e inserindo dados
+
+1. Abra o MySQL Workbench e acesse o MySQL Connection disponível.
+
+2. Crie uma nova Query Tab e use script abaixo:
+
+´´´
+DROP TABLE IF EXISTS ACCOUNT;
+
+CREATE TABLE challenge_db.ACCOUNT (
+	ID INTEGER,
+    NAME VARCHAR(100),
+    BALANCE float,
+    DATE date
+);
+
+INSERT INTO challenge_db.ACCOUNT (ID, NAME, BALANCE, DATE)
+VALUES 
+(198882, 'Jeff Bezos', 2500, STR_TO_DATE("05/07/1995", "%d/%m/%Y")),
+(188872, 'Jack Ma', 5000.25, STR_TO_DATE("04/04/1999", "%d/%m/%Y"));
+´´´
+
+3. Execute o script (Utilize o raio na interface do Query Tab caso não consiga executar).
+
+O Banco de Dados está pronto para ser consumido!
 
 ### Baixar e rodar o projeto do GitHub
 
