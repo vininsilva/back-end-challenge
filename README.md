@@ -40,8 +40,6 @@ grant all on challenge_db.* to 'admin'@'localhost';
 2. Crie uma nova Query Tab e use script abaixo:
 
 ```
-DROP TABLE IF EXISTS ACCOUNT;
-
 CREATE TABLE challenge_db.ACCOUNT (
 	ID INTEGER,
     NAME VARCHAR(100),
