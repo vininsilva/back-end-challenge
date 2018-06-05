@@ -1,5 +1,5 @@
 # back-end-challenge
-Desafio back-end
+### Desafio back-end
 
 Tecnologias usadas:
 - <a href="http://www.oracle.com/technetwork/java/javase/documentation/index.html">Java</a>
@@ -9,13 +9,13 @@ Tecnologias usadas:
 
 <hr>
 
-Utilizando a aplicação:
+## Utilizando a aplicação:
 
-## Instalar MySQL
+### Instalar MySQL
 
 Seguir este guia de instalação: https://www.devmedia.com.br/instalando-e-configurando-a-nova-versao-do-mysql/25813
 
-## Baixar e rodar o projeto do GitHub
+### Baixar e rodar o projeto do GitHub
 
 1. No terminal, utiliza o comando: 
 
