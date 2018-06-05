@@ -19,12 +19,12 @@ public class RegisterServiceImpl implements RegisterService {
 	@Override
 	public List<Account> retrieveAccounts() {
 		
-		Iterable<Account> accountResult = registerRepository.findAll();
+		List<Account> accountResult = registerRepository.findAll();
 		List<Account> accountList = new ArrayList<Account>();
-		Account account = new Account();
 		
 		for (Account acc: accountResult) {
 			
+			Account account = new Account();
 			account.setId(acc.getId());
 			account.setName(acc.getName());
 			account.setBalance(acc.getBalance());
@@ -35,8 +35,4 @@ public class RegisterServiceImpl implements RegisterService {
 		return accountList;
 	}
 
-	@Override
-	public void registerAccount() {
-		
-	}
 }

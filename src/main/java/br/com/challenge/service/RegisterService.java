@@ -7,7 +7,5 @@ import br.com.challenge.model.Account;
 public interface RegisterService {
 
 	List<Account> retrieveAccounts();
-	
-	void registerAccount();
 
 }
